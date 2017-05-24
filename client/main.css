@@ -1,0 +1,77 @@
+/* CSS declarations go here */
+body{
+	background: url("http://www.gustoguides.com/wp-content/uploads/2015/02/mercado-de-san-miguel-madrid.jpg?c1ae05");
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: 100%;
+	width: 35em;
+	margin-top: 75px;
+	margin-right: auto;
+	margin-left: 100px;
+	border: double;
+	
+}
+
+h1{
+	background-color: rgba(0,0,0,0.7);
+	font-size: 58px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: yellow;	
+	font-weight: bolder;
+}
+
+ul{
+	background: rgba(0,0,0,0.6);
+
+	color: white;
+	
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+a{
+	font-size: 20px;
+	color:#f6a410;
+}
+
+a:hover{
+	color:#f6a410;
+}
+
+form{
+
+	font-size: 20px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bolder;
+	background:rgba(0,0,0,0.3);
+}
+
+input[type=text]{
+					box-sizing: content-box;
+					border: 2px solid black;
+					
+}
+
+input[type=submit]{
+					padding: 7px 12px 8px;
+					font-size: 20px bolder;
+					background-color: #de7b31;
+					box-shadow: none;
+					
+                   -moz-border-radius: 5px;
+                   -webkit-border-radius: 5px;
+
+					outline-style:none;
+					box-shadow:none;
+					border-color:black;
+    				outline: black;    
+					cursor: pointer;
+					outline-color: black;
+					}
+
+input:focus {
+		
+    	outline: none;    
+    	border: 1px solid black;
+}

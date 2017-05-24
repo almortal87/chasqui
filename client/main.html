@@ -1,0 +1,37 @@
+<head>
+  <title>prueba1</title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+
+  
+</head>
+
+
+<body>
+  <h1 >Lista de compras</h1>
+      
+  {{> tasks}}
+
+</body>
+
+<template name="tasks">
+  
+         <form class="add.task" >
+          
+              <input type="text" name="nombre" autofocus="" id="txtName" >
+              <input type="submit"  value="Agregar">
+
+          </form>
+         
+     
+
+       <ul>
+          {{#each tasks}}
+              
+               <li>{{userName}} <a href="#" class="delete-task">borrar</a></li>
+              
+               
+           {{/each}}
+       </ul>
+</template>
+
+
