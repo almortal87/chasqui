@@ -1,5 +1,5 @@
 Tasks = new Mongo.Collection ('tasks');
-import './main.html';
+import './tasks.html';
 
 if (Meteor.isClient) {
 	Template.tasks.helpers({
@@ -10,13 +10,34 @@ if (Meteor.isClient) {
 		}
 	});
 
+
+		Router.configure({
+			layoutTemplate: 'ApplicationLayout'
+		});
+
+
+		Router.route('/principal', function () {
+ 			 this.render('principal',{
+ 			 	to:"principal"
+ 			 	});
+			});
+
+		Router.route('/', function () {
+ 			 this.render('tasks',{
+ 			 	to:"main"
+ 			 });
+			});
+        
+
 Template.tasks.events({
 		
-		"submit.add-task": function (event){
-				  
+		"submit.add-task": function (event){				
+				 
+
                   var userName = document.getElementById("txtName").value; 
                   userName=userName.toUpperCase();   
-                  const task = Tasks.findOne({userName:userName});   			  
+                  const task = Tasks.findOne({userName:userName});   
+
                            
                       if (userName.length == 0)        
                    {
@@ -31,7 +52,7 @@ Template.tasks.events({
     
  	                {
 
- 	                   alert('El elemento ' + userName +' ya se encuentra registrado');
+ 	                  alert('El elemento ' +  userName +' ya se encuentra registrado');
                   	
    	                }
 
@@ -47,11 +68,14 @@ Template.tasks.events({
 				     	{							
 				        	userName:userName,
 
-				     	})
-				
-				    	event.target.userName.value =' ';
 
+				     	})
+						
+						
+				    	
+				    	 event.target.userName.value=" ";
 				    	return false;
+
 			}
 		},
 	
@@ -61,7 +85,9 @@ Template.tasks.events({
 				Tasks.remove(this._id);
 			}
 			return false;
-		}		
+		},
+
+		
 		
 	});
 

@@ -4,15 +4,18 @@ body{
 	background-repeat: repeat-y;
 	background-position: center;
 	background-size: 100%;
-	width: 35em;
-	margin-top: 75px;
-	margin-right: auto;
-	margin-left: 100px;
-	border: double;
+	background-attachment: fixed;
+	
+	
 	
 }
 
 h1{
+	width: 10em;
+	margin-top: 75px;
+	margin-right: auto;
+	margin-left: 100px;
+	border: double;
 	background-color: rgba(0,0,0,0.7);
 	font-size: 58px;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -21,6 +24,11 @@ h1{
 }
 
 ul{
+	width: 20em;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: 100px;
+	border: double;
 	background: rgba(0,0,0,0.6);
 
 	color: white;
@@ -40,7 +48,11 @@ a:hover{
 }
 
 form{
-
+	width: 20em;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: 100px;
+	border: double;
 	font-size: 20px;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bolder;
@@ -61,6 +73,7 @@ input[type=submit]{
 					
                    -moz-border-radius: 5px;
                    -webkit-border-radius: 5px;
+                   -webkit-backface-visibility: hidden;
 
 					outline-style:none;
 					box-shadow:none;

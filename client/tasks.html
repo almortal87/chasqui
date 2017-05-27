@@ -1,20 +1,21 @@
-<head>
-  <title>prueba1</title>
-  <link rel="stylesheet" type="text/css" href="main.css"/>
+<template name="ApplicationLayout">
 
-  
-</head>
+{{> yield "principal"}}
+{{> yield "main"}}  
+
+</template>
+
+<template name="principal">
+    <body>   
+
+    </body>
+</template>
 
 
-<body>
-  <h1 >Lista de compras</h1>
-      
-  {{> tasks}}
 
-</body>
+<template name="tasks">       
 
-<template name="tasks">
-  
+         <h1 >Lista de compras</h1>
          <form class="add.task" >
           
               <input type="text" name="nombre" autofocus="" id="txtName" >
@@ -28,9 +29,11 @@
           {{#each tasks}}
               
                <li>{{userName}} <a href="#" class="delete-task">borrar</a></li>
-              
+                           
                
            {{/each}}
+
+          
        </ul>
 </template>
 
