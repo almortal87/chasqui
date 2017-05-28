@@ -4,9 +4,7 @@ import './tasks.html';
 if (Meteor.isClient) {
 	Template.tasks.helpers({
 		tasks: function(){			
-			return Tasks.find({});
-			
-			
+			return Tasks.find({});			
 		}
 	});
 
@@ -81,7 +79,7 @@ Template.tasks.events({
 	
 
 		"click .delete-task": function(event){
-			if (confirm("Eliminar")){
+			if (confirm("Eliminar+ userName")){
 				Tasks.remove(this._id);
 			}
 			return false;

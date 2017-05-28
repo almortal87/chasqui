@@ -6,12 +6,10 @@ body{
 	background-size: 100%;
 	background-attachment: fixed;
 	
-	
-	
 }
 
 h1{
-	width: 10em;
+	width: 8.83em;
 	margin-top: 75px;
 	margin-right: auto;
 	margin-left: 100px;
@@ -21,18 +19,18 @@ h1{
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: yellow;	
 	font-weight: bolder;
+	text-align: center;
 }
 
 ul{
-	width: 20em;
+	
+	width: 17em;
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: 100px;
 	border: double;
 	background: rgba(0,0,0,0.6);
-
-	color: white;
-	
+	color: white;	
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	font-size: 30px;
 	font-weight: bold;
@@ -48,7 +46,7 @@ a:hover{
 }
 
 form{
-	width: 20em;
+	width: 18em;
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: 100px;
@@ -66,6 +64,7 @@ input[type=text]{
 }
 
 input[type=submit]{
+
 					padding: 7px 12px 8px;
 					font-size: 20px bolder;
 					background-color: #de7b31;
